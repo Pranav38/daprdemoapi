@@ -1,0 +1,15 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: statestore
+spec:
+  type: state.azure.cosmosdb
+  metadata:
+  - name: url
+    value: https://acddapr.documents.azure.com:443/
+  - name: masterKey
+    value: <****Use the right key***>
+  - name: database
+    value: <database name>
+  - name: collection
+    value: <cosmos db collection name>
