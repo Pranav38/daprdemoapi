@@ -9,7 +9,7 @@ WORKDIR /src
 COPY ["DaprDemoAPI.csproj", "."]
 RUN dotnet restore "DaprDemoAPI.csproj"
 COPY . .
-WORKDIR "/src/"
+
 RUN dotnet build "DaprDemoAPI.csproj" -c Release -o /app/build
 
 FROM build AS publish
