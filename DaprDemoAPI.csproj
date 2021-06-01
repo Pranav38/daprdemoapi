@@ -4,9 +4,13 @@
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>DaprDemoAPI</RootNamespace>
     <UserSecretsId>729a1e0dffa8422b05e5e672268f23bf</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+    <DockerComposeProjectPath>docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Dapr.AspNetCore" Version="0.10.0-preview01" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.13" />
     <PackageReference Include="RestClient" Version="3.0.0.21" />
     <PackageReference Include="RestClient.Net" Version="4.1.0" />
   </ItemGroup>

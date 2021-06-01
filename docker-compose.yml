@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  daprdemoapi:
+    image: daprdemoapi
+    build:
+      context: .
+      dockerfile: Dockerfile
