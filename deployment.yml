@@ -14,8 +14,10 @@ spec:
       annotations:
         dapr.io/enabled: "true"
         dapr.io/app-id: "daprdemoapi"
+        dapr.io/app-protocol: "http"
         dapr.io/app-port: "80"
         dapr.io/log-level: "debug"
+        dapr.io/config: "zipkin"
     spec:
       containers:
       - name: daprdemoapi-container
